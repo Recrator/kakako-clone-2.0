@@ -11,3 +11,56 @@
   opacity: 0.6;
   margin-bottom: 12px;
 }
+
+.addMe {
+  position: relative;
+}
+
+.addMe i {
+  font-size: 20px;
+}
+
+.addMe i:hover {
+  font-size: 21px;
+}
+
+.addMe_plz {
+  position: absolute;
+  width: 200px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 0 20px 20px;
+  top: 20px;
+  left: -200px;
+  transition: opacity 0.5s ease-in-out;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px 6px;
+  opacity: 0;
+}
+
+.addMe i:hover ~ .addMe_plz {
+  opacity: 1;
+}
+
+.addMe_plz img {
+  margin: 0 2px;
+  z-index: 1;
+  opacity: 1;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.addMe_plz span {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: lightsalmon;
+  color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+}

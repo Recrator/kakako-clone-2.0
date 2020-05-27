@@ -14,7 +14,13 @@
 }
 
 .nav i {
+  color: rgb(65, 64, 64);
   font-size: 20px;
+}
+
+.nav i:hover {
+  color: #020202;
+  font-size: 21px;
 }
 
 .nav .nav__list-link {
@@ -23,16 +29,35 @@
 
 .nav .nav__badge {
   position: absolute;
-  top: -7px;
+  top: -10px;
   right: -7px;
-  font-size: 10px;
+  font-size: 8px;
   color: white;
   background-color: #dc5d46;
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  animation: turnBadge 1s infinite ease-in-out;
+}
+
+@keyframes turnBadge {
+  0% {
+    transform: translateY(-2px);
+  }
+  25% {
+    transform: none;
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: none;
+  }
+  100% {
+    transform: translateY(-2px);
+  }
 }
